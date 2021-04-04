@@ -1,0 +1,30 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "Connect with your realtor, web app interface with css grid",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./dist/css/style.css -w",
+    "compile:sass": "node-sass ./sass/main.scss ./dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' ./dist/css/style.comp.css -o ./dist/css/style.prefix.css",
+    "compress:css": "node-sass ./dist/css/style.prefix.css ./dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oussama-Moussaoui/Nexter-Grid.git"
+  },
+  "author": "Oussama-Moussaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oussama-Moussaoui/Natours-Project/issues"
+  },
+  "homepage": "https://github.com/Oussama-Moussaoui/Natours-Project#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1"
+  }
+}
