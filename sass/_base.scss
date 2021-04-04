@@ -1,3 +1,5 @@
+/////////////////////////////////////////
+// Variables
 // COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #B28451;
@@ -13,3 +15,41 @@ $color-grey-dark-2: #6D5D4B;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+/////////////////////////////////////////
+// Base Styling
+
+// Reset
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+// Main Styling
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    // input tags doesn't inherit font-family neither the font-size of the global document.
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
