@@ -17,6 +17,19 @@ $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
 /////////////////////////////////////////
+// Mixins
+@mixin square($len) {
+    height: $len;
+    width: $len;
+}
+
+@mixin circle($len) {
+    height: $len;
+    width: $len;
+    border-radius: 50%;
+}
+
+/////////////////////////////////////////
 // Base Styling
 
 // Reset
@@ -37,10 +50,6 @@ html {
 
 body {
     background: #fff;
-}
-
-h1, h2, h3, h4 {
-    margin-bottom: 1rem;
 }
 
 a {

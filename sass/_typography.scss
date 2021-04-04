@@ -5,3 +5,27 @@ body {
     color: $color-grey-dark-2;
     font-weight: 300;
 }
+
+// Headings
+h1, h2, h3, h4 {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+
+}
+
+.heading-2 {
+
+}
+
+.heading-3 {
+
+}
+
+.heading-4 {
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+    &--primary { color: $color-primary; }
+}
