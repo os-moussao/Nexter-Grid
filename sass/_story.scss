@@ -5,7 +5,35 @@
     }
 
     &__content {
+        height: 500px;
         background: $color-grey-light-1;
         grid-column: col-start 5 / main-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding: 0 12%;
+        // display: grid;
+        // align-items: center;
+        // justify-items: start;
+
+        .heading-3 {
+            text-transform: uppercase;
+            margin-bottom: .8rem;
+        }
+
+        .heading-2 {
+            font-style: italic;
+            margin-bottom: 1.2rem;
+        }
+
+        .btn {
+            align-self: flex-start;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+        margin-bottom: 2rem;
     }
 }

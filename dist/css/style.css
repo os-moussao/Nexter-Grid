@@ -31,7 +31,7 @@ input {
   max-width: 1500px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 80vh min-content min-content repeat(3, min-content);
+  grid-template-rows: 80vh repeat(5, min-content);
   grid-template-columns: [main-start] minmax(60px, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 140px) [col-end]) [center-end] minmax(60px, 1fr) [main-end]; }
 
 body {
@@ -44,14 +44,57 @@ h1, h2, h3, h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
-.heading-4--light {
+.heading-1--light {
   color: #f9f7f6; }
 
-.heading-4--dark {
+.heading-1--dark {
   color: #54483A; }
 
-.heading-4--primary {
+.heading-1--primary {
   color: #c69963; }
+
+.heading-2 {
+  font-size: 40px;
+  line-height: 1; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #54483A; }
+  .heading-2--primary {
+    color: #c69963; }
+
+.heading-3--light {
+  color: #f9f7f6; }
+
+.heading-3--dark {
+  color: #54483A; }
+
+.heading-3--primary {
+  color: #c69963; }
+
+.heading-4 {
+  font-size: 20px; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
+  .heading-4--primary {
+    color: #c69963; }
+
+.btn {
+  display: inline-block;
+  background: #c69963;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  transition: background .2s; }
+  .btn:hover {
+    background: #B28451; }
 
 .navbar {
   position: absolute;
@@ -98,8 +141,26 @@ h1, h2, h3, h4 {
   grid-column: main-start / col-end 4; }
 
 .story__content {
+  height: 500px;
   background: #f9f7f6;
-  grid-column: col-start 5 / main-end; }
+  grid-column: col-start 5 / main-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0 12%; }
+  .story__content .heading-3 {
+    text-transform: uppercase;
+    margin-bottom: .8rem; }
+  .story__content .heading-2 {
+    font-style: italic;
+    margin-bottom: 1.2rem; }
+  .story__content .btn {
+    align-self: flex-start; }
+
+.story__text {
+  font-style: italic;
+  margin-bottom: 2rem; }
 
 .homes {
   background: #101d2c;
