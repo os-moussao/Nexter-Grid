@@ -10,6 +10,7 @@ body {
 h1, h2, h3, h4 {
     font-family: $font-display;
     font-weight: 400;
+    line-height: 1;
 }
 
 @mixin heading-clrs {
@@ -19,12 +20,12 @@ h1, h2, h3, h4 {
 }
 
 .heading-1 {
+    font-size: 3.5rem;
     @include heading-clrs;
 }
 
 .heading-2 {
     font-size: 40px;
-    line-height: 1;
     @include heading-clrs;
 }
 
@@ -49,6 +50,7 @@ h1, h2, h3, h4 {
     text-align: center;
     font-family: $font-display;
     font-size: 17px;
+    font-weight: 400;
     transition: background .2s;
 
     &:hover {
