@@ -54,6 +54,19 @@ h1, h2, h3, h4 {
     &:hover {
         background: $color-primary-dark;
     }
+
+    &-transparent {
+        background: transparent;
+        border: 2px #fff solid;
+        padding: 15px 20px;
+        font-weight: 400;
+        font-size: 14px;    
+
+        &:hover {
+            border-color: $color-primary;
+            background: $color-primary;
+        }
+    }
 }
 
 // SVG Icons

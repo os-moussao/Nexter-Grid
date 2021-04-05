@@ -7,6 +7,7 @@ html {
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   background: #eee; }
 
 body {
@@ -32,7 +33,7 @@ input {
   max-width: 1800px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-rows: 95vh repeat(5, min-content);
   grid-template-columns: [main-start] minmax(60px, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 140px) [col-end]) [center-end] minmax(60px, 1fr) [main-end]; }
 
 body {
@@ -96,6 +97,15 @@ h1, h2, h3, h4 {
   transition: background .2s; }
   .btn:hover {
     background: #B28451; }
+  .btn-transparent {
+    background: transparent;
+    border: 2px #fff solid;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 14px; }
+    .btn-transparent:hover {
+      border-color: #c69963;
+      background: #c69963; }
 
 .svg-icon {
   height: 25px;
@@ -108,11 +118,31 @@ h1, h2, h3, h4 {
   width: 100%;
   z-index: 1000;
   background: transparent;
-  text-align: center; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+
+.logo__link {
+  display: inline-block;
+  width: 150px;
+  line-height: 0; }
+
+.navigation {
+  display: flex; }
+  .navigation__link {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 1rem; }
+    .navigation__link:hover {
+      color: #c69963; }
+  .navigation .btn {
+    transform: translateY(60%); }
 
 .header {
   position: relative;
-  background: #54483A;
+  background: rgba(16, 29, 44, 0.9);
   grid-column: main-start / col-end 6; }
 
 .realtors {
