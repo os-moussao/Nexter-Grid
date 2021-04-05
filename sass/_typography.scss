@@ -60,9 +60,10 @@ h1, h2, h3, h4 {
     &-transparent {
         background: transparent;
         border: 2px #fff solid;
-        padding: 15px 20px;
+        padding: 10px 13px;
         font-weight: 400;
-        font-size: 14px;    
+        font-size: 14px; 
+        line-height: 0;   
 
         &:hover {
             border-color: $color-primary;
