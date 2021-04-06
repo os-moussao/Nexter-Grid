@@ -161,7 +161,6 @@ h1, h2, h3, h4 {
 
 .header {
   position: relative;
-  background: rgba(16, 29, 44, 0.9);
   grid-column: main-start / col-end 6;
   background: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg) no-repeat center center/cover;
   padding: 0 5% 5% 5%;
@@ -278,33 +277,35 @@ h1, h2, h3, h4 {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
-  background: linear-gradient(rgba(198, 153, 99, 0.3), rgba(198, 153, 99, 0.3)), url("../img/back-small.jpg") no-repeat center center/cover; }
+  background: linear-gradient(rgba(198, 153, 99, 0.3), rgba(198, 153, 99, 0.3)), url("../img/back-small.jpg") no-repeat center center/cover;
+  overflow: hidden; }
   @media screen and (min-width: 1800px) {
     .story__pictures {
       background: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url("../img/back.jpg") no-repeat center center/cover; } }
   @media screen and (max-width: 800px) {
     .story__pictures {
-      grid-column: main-start / main-end; } }
+      grid-column: main-start / main-end;
+      height: 300px; } }
 
-@media screen and (max-width: 800px) {
-  .story__img {
-    transform: translateX(-25px); } }
-
-.story__img--1 {
-  grid-column: 2 / 6;
-  grid-row: 2 / 6;
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.2); }
-
-.story__img--2 {
-  width: 115%;
-  z-index: 100;
-  grid-column: 4 / 7;
-  grid-row: 4 / 6;
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.4); }
+.story__img {
+  object-fit: cover; }
   @media screen and (max-width: 800px) {
-    .story__img--2 {
-      width: 100%;
-      grid-row: 3 / 5; } }
+    .story__img {
+      transform: translateX(-25px); } }
+  .story__img--1 {
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.2); }
+  .story__img--2 {
+    width: 115%;
+    z-index: 100;
+    grid-column: 4 / 7;
+    grid-row: 4 / 6;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.4); }
+    @media screen and (max-width: 800px) {
+      .story__img--2 {
+        width: 100%;
+        grid-row: 3 / 5; } }
 
 .story__content {
   background: #f9f7f6;

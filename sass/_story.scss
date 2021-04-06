@@ -9,6 +9,7 @@
         align-items: center;
         background: linear-gradient(rgba($color-primary, .3), rgba($color-primary, .3)),
                     url('../img/back-small.jpg') no-repeat center center / cover;
+        overflow: hidden;
 
         @media screen and (min-width: 1800px) {
             background: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)),
@@ -17,11 +18,12 @@
 
         @media screen and (max-width: 800px) {
             grid-column: main-start / main-end;
-        }   
+            height: 300px;
+        }  
     }
 
     &__img {
-
+        object-fit: cover;
         @media screen and (max-width: 800px) {
             transform: translateX(-25px);
         }
