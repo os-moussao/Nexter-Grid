@@ -7,6 +7,10 @@
     grid-gap: 1rem;
     padding: 1rem;
 
+    @media screen and (min-width: 1800px) {
+        grid-template-rows: repeat(7, 120px);   
+    }
+
     &__item {
         line-height: 0;
         font-size: 0;
