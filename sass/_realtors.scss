@@ -1,4 +1,35 @@
 .realtors {
     background: $color-secondary;
     grid-column: col-start 7 / main-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}
+
+.realtor {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    
+    &__profile-img {
+        @include circle(70px);
+    }
+
+    &__name, &__track-record {
+        display: block;
+    }
+
+    &__track-record {
+        font-size: 11px;
+        color: $color-grey-light-2;
+        margin-top: 3px;
+    }
 }

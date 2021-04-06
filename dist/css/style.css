@@ -185,7 +185,31 @@ h1, h2, h3, h4 {
 
 .realtors {
   background: #101d2c;
-  grid-column: col-start 7 / main-end; }
+  grid-column: col-start 7 / main-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px; }
+  .realtors__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px; }
+
+.realtor {
+  display: flex;
+  column-gap: 20px;
+  align-items: center; }
+  .realtor__profile-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%; }
+  .realtor__name, .realtor__track-record {
+    display: block; }
+  .realtor__track-record {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 3px; }
 
 .features {
   grid-column: center-start / center-end;
