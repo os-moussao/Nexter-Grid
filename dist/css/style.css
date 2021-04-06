@@ -175,14 +175,17 @@ h1, h2, h3, h4 {
     .header__seenon-text::after {
       justify-self: start; }
   .header__seenon-logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 2rem; }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    justify-items: center; }
     .header__seenon-logos img {
       height: 30px;
       width: auto;
       filter: brightness(75%); }
+      @media screen and (max-width: 1000px) {
+        .header__seenon-logos img {
+          height: 25px; } }
 
 .realtors {
   background: #101d2c;
@@ -211,6 +214,9 @@ h1, h2, h3, h4 {
     font-size: 11px;
     color: #aaa;
     margin-top: 3px; }
+  @media screen and (max-width: 1000px) {
+    .realtor {
+      transform: scale(0.8); } }
 
 .features {
   grid-column: center-start / center-end;

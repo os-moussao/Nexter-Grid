@@ -48,14 +48,18 @@
             }
         }
         &-logos {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+            justify-items: center;
             img {
                 height: 30px;
                 width: auto;
                 filter: brightness(75%);
+
+                @media screen and (max-width: 1000px) {
+                    height: 25px;
+                }
             }
         }
     }
