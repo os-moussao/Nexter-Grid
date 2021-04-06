@@ -17,9 +17,8 @@
   "author": "Oussama-Moussaoui",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Oussama-Moussaoui/Natours-Project/issues"
+    "url": "https://github.com/Oussama-Moussaoui/Nexter-Grid/issues"
   },
-  "homepage": "https://github.com/Oussama-Moussaoui/Natours-Project#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "concat": "^1.0.3",
