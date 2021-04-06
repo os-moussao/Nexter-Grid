@@ -39,6 +39,9 @@ input {
   @media screen and (max-width: 800px) {
     .container {
       grid-template-rows: 60px calc(90vh - 60px) 1fr repeat(6, min-content); } }
+  @media screen and (max-width: 700px) {
+    .container {
+      grid-template-rows: min-content calc(90vh - 60px) 1fr repeat(6, min-content); } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -107,8 +110,7 @@ h1, h2, h3, h4 {
     border: 2px #fff solid;
     padding: 10px 13px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 0; }
+    font-size: 14px; }
     .btn-transparent:hover {
       border-color: #c69963;
       background: #c69963; }
@@ -131,6 +133,11 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 0 1rem;
   background: rgba(16, 29, 44, 0.2); }
+  @media screen and (max-width: 800px) {
+    .navbar {
+      padding: 1rem;
+      flex-wrap: wrap;
+      row-gap: 1rem; } }
 
 .logo__link {
   display: inline-block;
@@ -139,6 +146,11 @@ h1, h2, h3, h4 {
 
 .navigation {
   display: flex; }
+  @media screen and (max-width: 800px) {
+    .navigation {
+      order: 1;
+      flex: 1;
+      justify-content: center; } }
   .navigation__link {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;

@@ -86,4 +86,8 @@ input {
     @media screen and (max-width: 800px) {
         grid-template-rows: 60px calc(90vh - 60px) 1fr repeat(6, min-content);
     }
+
+    @media screen and (max-width: 700px) {
+        grid-template-rows: min-content calc(90vh - 60px) 1fr repeat(6, min-content);
+    }
 }
