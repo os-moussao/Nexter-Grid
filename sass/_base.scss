@@ -46,11 +46,11 @@ html {
 // Core Styling
 html {
     scroll-behavior: smooth;
-    background: #eee;
 }
 
 body {
     background: #fff;
+    background: #eee;
 }
 
 a {
@@ -81,4 +81,9 @@ input {
     display: grid;
     grid-template-rows: 60px calc(90vh - 60px) repeat(5, min-content);
     grid-template-columns: [main-start] minmax(60px, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 140px) [col-end]) [center-end] minmax(60px, 1fr) [main-end];
+    background: #fff;
+
+    @media screen and (max-width: 800px) {
+        grid-template-rows: 60px calc(90vh - 60px) 1fr repeat(5, min-content);
+    }
 }
