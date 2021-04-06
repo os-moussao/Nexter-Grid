@@ -38,7 +38,7 @@ input {
   background: #fff; }
   @media screen and (max-width: 800px) {
     .container {
-      grid-template-rows: 60px calc(90vh - 60px) 1fr repeat(5, min-content); } }
+      grid-template-rows: 60px calc(90vh - 60px) 1fr repeat(6, min-content); } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -266,6 +266,13 @@ h1, h2, h3, h4 {
   @media screen and (min-width: 1800px) {
     .story__pictures {
       background: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url("../img/back.jpg") no-repeat center center/cover; } }
+  @media screen and (max-width: 800px) {
+    .story__pictures {
+      grid-column: main-start / main-end; } }
+
+@media screen and (max-width: 800px) {
+  .story__img {
+    transform: translateX(-25px); } }
 
 .story__img--1 {
   grid-column: 2 / 6;
@@ -278,6 +285,10 @@ h1, h2, h3, h4 {
   grid-column: 4 / 7;
   grid-row: 4 / 6;
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.4); }
+  @media screen and (max-width: 800px) {
+    .story__img--2 {
+      width: 100%;
+      grid-row: 3 / 5; } }
 
 .story__content {
   background: #f9f7f6;
@@ -287,6 +298,11 @@ h1, h2, h3, h4 {
   justify-content: center;
   margin: 0 auto;
   padding: 0 12%; }
+  @media screen and (max-width: 800px) {
+    .story__content {
+      grid-column: main-start / main-end;
+      grid-row: 5 / 6;
+      padding: 3rem 2rem; } }
   .story__content .heading-3 {
     text-transform: uppercase;
     margin-bottom: .8rem; }

@@ -14,9 +14,17 @@
             background: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)),
                         url('../img/back.jpg') no-repeat center center / cover;  
         }
+
+        @media screen and (max-width: 800px) {
+            grid-column: main-start / main-end;
+        }   
     }
 
     &__img {
+
+        @media screen and (max-width: 800px) {
+            transform: translateX(-25px);
+        }
     
         &--1 {
             grid-column: 2 / 6;
@@ -30,6 +38,11 @@
             grid-column: 4 / 7;
             grid-row: 4 / 6;
             box-shadow: 0 15px 35px 0 rgba(#000, .4);
+
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                grid-row: 3 / 5;
+            }
         }
     }
 
@@ -44,6 +57,13 @@
         // display: grid;
         // align-items: center;
         // justify-items: start;
+
+        @media screen and (max-width: 800px) {
+            grid-column: main-start / main-end;
+            grid-row: 5 / 6;
+            padding: 3rem 2rem;
+            // align-items: center;
+        }
 
         .heading-3 {
             text-transform: uppercase;
